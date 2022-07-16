@@ -23,3 +23,4 @@ yarn lint
 ## Installed libraries
 - vuetify
 - vue-router
+- vuelidate
