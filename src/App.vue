@@ -46,7 +46,7 @@
 
 <script>
 // import HelloWorld from './components/HelloWorld';
-import Home from './components/itsuki-home.vue'
+import Home from './components/pages/itsuki-home.vue'
 export default {
   name: 'App',
 

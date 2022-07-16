@@ -2,14 +2,14 @@
   <div>
     <itsuki-header></itsuki-header>
     <h1 id="title">この世はいつきが全て！</h1>
-    <v-img class="main-img" src="../../public/himawaris.jpeg"></v-img>
+    <v-img class="main-img" src="../../../public/himawaris.jpeg"></v-img>
     <itsukiFooter></itsukiFooter>
   </div>
 </template>
 
 <script>
-import itsukiHeader from './common/itsuki-header.vue'
-import itsukiFooter from './common/itsuki-footer.vue'
+import itsukiHeader from '../common/molecules/itsuki-header.vue'
+import itsukiFooter from '../common/molecules/itsuki-footer.vue'
 
 export default {
   name: 'itsuki-home',
@@ -35,5 +35,7 @@ export default {
   .main-img {
     height: 80vh;
     margin-bottom: 30px;
+    margin-right: 20%;
+    margin-left: 20%;
   }
 </style>
