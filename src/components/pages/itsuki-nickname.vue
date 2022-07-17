@@ -38,8 +38,11 @@ export default {
   },
   methods: {
     submit() {
-      this.$router.push({path: '/select'})
-    }
+      this.$router.push({name: 'select-category'})
+    },
+    clear() {
+      return this.nickname = ''
+    },
   },
   computed: {
     nicknameError() {
@@ -54,7 +57,7 @@ export default {
 
 <style>
   .page {
-    background-color: greenyellow;
+    background-color: #6BE489;
     height: 80vh;
   }
   .label {

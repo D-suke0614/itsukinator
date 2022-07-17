@@ -1,9 +1,7 @@
 <template>
-  <div>
+  <div class="page">
     <h1 id="title">この世はいつきが全て！</h1>
-    <router-link :to="{path: '/nickname'}">
-      <v-btn class="btn">悩みを相談してみる</v-btn>
-    </router-link>
+    <v-btn class="btn" @click="submit">悩みを相談してみる</v-btn>
     <v-img class="main-img" src="../../../public/himawaris.jpeg"></v-img>
   </div>
 </template>
@@ -18,10 +16,19 @@ export default {
 
     }
   },
+  methods: {
+    submit() {
+      this.$router.push({name: 'nickname'})
+    }
+  }
 }
 </script>
 
 <style>
+.page {
+  background-color: #EBE568;
+  height: 80vh;
+}
   #title {
     text-align: center;
     margin-top: 30px;
@@ -33,7 +40,7 @@ export default {
     margin-bottom: 50px;
   }
   .main-img {
-    height: 80vh;
+    height: 70%;
     margin-bottom: 30px;
     margin-right: 20%;
     margin-left: 20%;

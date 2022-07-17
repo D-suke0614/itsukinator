@@ -7,7 +7,7 @@
     >
       <v-app-bar-nav-icon></v-app-bar-nav-icon>
 
-      <v-toolbar-title>ITSUKINATOR</v-toolbar-title>
+      <v-toolbar-title @click="home">ITSUKINATOR</v-toolbar-title>
 
       <v-spacer></v-spacer>
 
@@ -27,5 +27,10 @@ export default {
 
     }
   },
+  methods: {
+    home() {
+      this.$router.push({name: 'home'})
+    }
+  }
 }
 </script>
