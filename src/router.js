@@ -4,6 +4,7 @@ import Home from './components/pages/itsuki-home'
 import Nickname from './components/pages/itsuki-nickname'
 import SelectCategory from './components/pages/itsuki-select-category'
 import SelectContent from './components/pages/itsuki-select-content'
+import Result from './components/pages/itsuki-result'
 
 Vue.use(VueRouter)
 
@@ -28,6 +29,11 @@ const routes = [
     name: 'select-content',
     component: SelectContent,
   },
+  {
+    path: '/result',
+    name: 'result',
+    component: Result,
+  }
 ]
 
 const router = new VueRouter({

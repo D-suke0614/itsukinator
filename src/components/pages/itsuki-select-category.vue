@@ -1,15 +1,13 @@
 <template>
-  <div class="page">
+  <div class="select-page">
     <h2 class="label">悩みのカテゴリーを選択しろやねん！</h2>
-    <v-form>
-      <v-radio-group column class="radio-group" v-model="selected">
-        <v-radio class="radio" label="恋愛やねん" value="0"></v-radio>
-        <v-radio class="radio" label="仕事やねん" value="1"></v-radio>
-        <v-radio class="radio" label="人間関係やねん" value="2"></v-radio>
-        <v-radio class="radio" label="お金やねん" value="3"></v-radio>
-      </v-radio-group>
-      <v-btn class="submit" @click="submit">次へ</v-btn>
-    </v-form>
+    <v-radio-group column class="radio-group" v-model="selected">
+      <v-radio class="radio" label="恋愛やねん" value="0"></v-radio>
+      <v-radio class="radio" label="仕事やねん" value="1"></v-radio>
+      <v-radio class="radio" label="人間関係やねん" value="2"></v-radio>
+      <v-radio class="radio" label="お金やねん" value="3"></v-radio>
+    </v-radio-group>
+    <v-btn class="submit" @click="submit">次へ</v-btn>
   </div>
 </template>
 
@@ -30,8 +28,9 @@ export default {
 </script>
 
 <style>
-  .page {
+  .select-page {
     background-color: #EBE568;
+    min-height: 80vh;
   }
   .label {
     text-align: center;
