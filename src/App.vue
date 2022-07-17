@@ -3,8 +3,6 @@
     <itsukiHeader/>
     <v-main class="container">
       <router-view></router-view>
-      <!-- <Home/> -->
-      <!-- <Nickname/> -->
     </v-main>
     <itsukiFooter/>
   </v-app>
@@ -13,16 +11,12 @@
 <script>
 import itsukiHeader from './components/common/molecules/itsuki-header.vue'
 import itsukiFooter from './components/common/molecules/itsuki-footer.vue'
-// import Home from './components/pages/itsuki-home.vue'
-// import Nickname from './components/pages/itsuki-nickname.vue'
 export default {
   name: 'App',
 
   components: {
-    // Home,
     itsukiHeader,
     itsukiFooter,
-    // Nickname,
   },
 
   data: () => ({
