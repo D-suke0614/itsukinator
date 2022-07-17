@@ -1,7 +1,7 @@
 <template>
   <v-app>
     <itsukiHeader/>
-    <v-main>
+    <v-main class="container">
       <router-view></router-view>
       <!-- <Home/> -->
       <!-- <Nickname/> -->
@@ -30,3 +30,8 @@ export default {
   }),
 };
 </script>
+<style>
+  .container {
+    margin: 0 auto;
+  }
+</style>
