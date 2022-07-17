@@ -1,5 +1,5 @@
 <template>
-  <div class="page">
+  <div class="home-page">
     <h1 id="title">この世はいつきが全て！</h1>
     <v-btn class="btn" @click="submit">悩みを相談してみる</v-btn>
     <v-img class="main-img" src="../../../public/himawaris.jpeg"></v-img>
@@ -25,9 +25,10 @@ export default {
 </script>
 
 <style>
-.page {
+.home-page {
   background-color: #EBE568;
-  height: 80vh;
+  min-height: 80vh;
+  padding-bottom: 50px;
 }
   #title {
     text-align: center;

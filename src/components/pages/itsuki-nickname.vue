@@ -1,5 +1,5 @@
 <template>
-  <div class="page">
+  <div class="nickname-page">
     <h2 class="label">ニックネームをニックネームを入力しろやねん！</h2>
     <v-form class="form">
       <!-- validationは後で実装 -->
@@ -56,9 +56,9 @@ export default {
 </script>
 
 <style>
-  .page {
+  .nickname-page {
     background-color: #6BE489;
-    height: 80vh;
+    min-height: 80vh;
   }
   .label {
     text-align: center;
