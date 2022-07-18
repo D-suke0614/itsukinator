@@ -14,7 +14,7 @@
 </template>
 
 <script>
-import results from './resultValue'
+import results from './values/resultValue'
 export default {
   name: 'itsuki-result',
   data() {
@@ -31,7 +31,6 @@ export default {
     const selected = this.$route.params.selectedContent
     switch (selected) {
       case '0':
-        console.log('results', results[0].contents)
         this.items = results[0].contents
         break;
       case '1':
