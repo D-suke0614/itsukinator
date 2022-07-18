@@ -6,6 +6,7 @@
       <p>一秒後にはHistory（History）</p>
       <p>I, My, Me, Mineじゃ 表現もできないさ</p>
       <p>君というPrinceがいなきゃI'mゼロ人称</p>
+      {{ this.$route.params.selectedContent }}
 
       <p v-for="item in items" :key="item.id">{{ item.content }}</p>
     </div>
@@ -29,15 +30,9 @@ export default {
   },
   mounted() {
     const selected = this.$route.params.selectedContent
-    switch (selected) {
-      case '0':
-        this.items = results[0].contents
-        break;
-      case '1':
-        this.items = results[1].contents
-        break;
-      default:
-    }
+    const index = Number(selected.slice(0, 1))
+    const value = Number(selected.slice(1, 2))
+    this.items = results[index][value]
   },
 }
 </script>
