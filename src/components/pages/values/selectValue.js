@@ -10,11 +10,11 @@ const selectcontents = [
                 content: '東京に女がおらんねん'
             },
             {
-                value: '02',
+                value: '03',
                 content: 'Tinderやってると疑われてるねん'
             },
             {
-                value: '03',
+                value: '04',
                 content: '今日も朝帰りしてしもてん'
             },
         ],

@@ -1,6 +1,5 @@
 <template>
     <div class="select-page">
-        {{ $route.params.selected }}
         <h2>悩みはなんやねん？</h2>
         <v-radio-group column class="radio-group" v-model="selectedContent">
             <v-radio
