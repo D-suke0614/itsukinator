@@ -9,6 +9,7 @@
           class="submit btn white--text text-h5 font-weight-black"
           @click="submit"
           color="#897DD8"
+          :disabled="!nickname"
         >
           次  へ
         </v-btn>
@@ -19,7 +20,6 @@
           クリア
         </v-btn>
       </div>
-      
     </v-form>
   </div>
 </template>
