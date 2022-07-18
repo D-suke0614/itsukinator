@@ -3,27 +3,43 @@
     {{ $route.params.selected }}
     <h2>悩みはなんやねん？</h2>
     <v-radio-group column class="radio-group" v-model="selectedContent">
-      <v-radio class="radio" label="90番目の女が見つからんねん" value="0"></v-radio>
-      <v-radio class="radio" label="東京に女がおらんねん" value="1"></v-radio>
-      <v-radio class="radio" label="Tinderやってると疑われてるねん" value="2"></v-radio>
-      <v-radio class="radio" label="今日も朝帰りしてしもてん" value="3"></v-radio>
+    <v-radio
+      class="radio"
+      v-for="item in items"
+      :key="item.id"
+      :label=item.content
+      :value=item.content
+      >
+      </v-radio>
     </v-radio-group>
     <v-btn class="submit" @click="submit">次へ</v-btn>
   </div>
 </template>
 
 <script>
+import radioContents from './values/selectValue'
 export default {
-
   name: 'itsuki-select-content',
   data() {
     return {
       selectedContent: '',
+      items: [],
     }
   },
   methods: {
     submit() {
       this.$router.push({name: 'result', params:{selectedContent: this.selectedContent}})
+    }
+  },
+  mounted() {
+    const selected = this.$route.params.selected
+    switch (selected) {
+      case '0':
+        this.items = radioContents[0].contents
+        break;
+      case '1':
+        this.items = radioContents[1].contents
+        break;
     }
   },
 }
