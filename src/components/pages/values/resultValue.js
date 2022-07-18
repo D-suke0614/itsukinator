@@ -3,58 +3,55 @@ const RESULTS = [
   {
     1: [
       {
-        content: 'this is first content 1',
+        content: 'きっと見つかりますよ!by いつき',
       },
       {
-        content: 'this is second content',
+        content: '諦めないでください!',
       },
       {
-        content: 'this is third content',
-      },
-      {
-        content: 'this is 4th content',
+        content: 'by いつき',
       },
     ],
     2: [
       {
-        content: 'this is first content 2',
+        content: '星の数ほど',
       },
       {
-        content: 'this is second content',
+        content: '女性はいるから',
       },
       {
-        content: 'this is third content',
+        content: '焦らないで・・・',
       },
       {
-        content: 'this is 4th content',
+        content: 'by いつき',
       },
     ],
     3: [
       {
-        content: 'this is first content 3',
+        content: '今はアプリで恋愛するのも',
       },
       {
-        content: 'this is second content',
+        content: 'ふつうの時代ですよ',
       },
       {
-        content: 'this is third content',
+        content: '気にしないで行きましょう田中さん',
       },
       {
-        content: 'this is 4th content',
+        content: 'by いつき',
       },
     ],
     4: [
       {
-        content: 'this is first content 4',
+        content: '朝帰りは・・・',
       },
       {
-        content: 'this is second content',
+        content: '不健全ですよ。',
       },
       {
-        content: 'this is third content',
+        content: 'やめましょう。田中さん',
       },
       {
-        content: 'this is 4th content',
+        content: 'by いつき',
       },
     ],
   },
@@ -62,58 +59,58 @@ const RESULTS = [
   {
     1: [
       {
-        content: 'this is first content 1',
+        content: 'ぶつかる壁は大きいですよね。',
       },
       {
-        content: 'this is second content',
+        content: 'でも意味もわからずもがき続けることにも',
       },
       {
-        content: 'this is third content',
+        content: 'ちゃんと意味はあるとおもいます。',
       },
       {
-        content: 'this is 4th content',
+        content: 'もう一踏ん張り!by いつき',
       },
     ],
     2: [
       {
-        content: 'this is first content 2',
+        content: '一般的には3年でやっと育成にかけたコストを',
       },
       {
-        content: 'this is second content',
+        content: '回収できるので今は出来なくて当たり前です。',
       },
       {
-        content: 'this is third content',
+        content: '周りに助けてもらって成長させて貰いましょう',
       },
       {
-        content: 'this is 4th content',
+        content: 'by いつき',
       },
     ],
     3: [
       {
-        content: 'this is first content 3',
+        content: '新人にそう思わせるなんて',
       },
       {
-        content: 'this is second content',
+        content: '社長あかんやん',
       },
       {
-        content: 'this is third content',
+        content: '別の人に評価して貰いましょう',
       },
       {
-        content: 'this is 4th content',
+        content: 'by いつき',
       },
     ],
     4: [
       {
-        content: 'this is first content 4',
+        content: '会社から遠いのは',
       },
       {
-        content: 'this is second content',
+        content: '辛いですよね・・・',
       },
       {
-        content: 'this is third content',
+        content: '近くに引越せないか会社に相談してみましょう',
       },
       {
-        content: 'this is 4th content',
+        content: 'by いつき',
       },
     ],
   },
@@ -121,58 +118,58 @@ const RESULTS = [
   {
     1: [
       {
-        content: 'this is first content 1',
+        content: '友達は',
       },
       {
-        content: 'this is second content',
+        content: 'Tinderで',
       },
       {
-        content: 'this is third content',
+        content: '作ればええねん',
       },
       {
-        content: 'this is 4th content',
+        content: 'by いつき',
       },
     ],
     2: [
       {
-        content: 'this is first content 2',
+        content: '人見知りの部分も',
       },
       {
-        content: 'this is second content',
+        content: '好きになってくれる人がいるんじゃないですかね',
       },
       {
-        content: 'this is third content',
+        content: '知らんけど',
       },
       {
-        content: 'this is 4th content',
+        content: 'by いつき',
       },
     ],
     3: [
       {
-        content: 'this is first content 3',
+        content: '一人でいるのもいいと思います',
       },
       {
-        content: 'this is second content',
+        content: 'ハムスターでも',
       },
       {
-        content: 'this is third content',
+        content: '飼ってみるといいかもよ？',
       },
       {
-        content: 'this is 4th content',
+        content: 'by いつき',
       },
     ],
     4: [
       {
-        content: 'this is first content 4',
+        content: 'あなたのそのキャラクターが',
       },
       {
-        content: 'this is second content',
+        content: 'その場の雰囲気を',
       },
       {
-        content: 'this is third content',
+        content: '和やかにするとおもいます。',
       },
       {
-        content: 'this is 4th content',
+        content: 'by いつき',
       },
     ],
   },
@@ -180,58 +177,58 @@ const RESULTS = [
   {
     1: [
       {
-        content: 'this is first content 1',
+        content: '私、あんまり',
       },
       {
-        content: 'this is second content',
+        content: '無駄遣いすることないんですよね',
       },
       {
-        content: 'this is third content',
+        content: 'だからわからへん',
       },
       {
-        content: 'this is 4th content',
+        content: 'by いつき',
       },
     ],
     2: [
       {
-        content: 'this is first content 2',
+        content: '毎晩朝帰りばっかりしてるから',
       },
       {
-        content: 'this is second content',
+        content: 'お金たまらへんねん！',
       },
       {
-        content: 'this is third content',
+        content: 'ちゃんとして下さい。田中さん。',
       },
       {
-        content: 'this is 4th content',
+        content: 'by いつき',
       },
     ],
     3: [
       {
-        content: 'this is first content 3',
+        content: '稼いでる年上が出すのは',
       },
       {
-        content: 'this is second content',
+        content: '当然だと思います',
       },
       {
-        content: 'this is third content',
+        content: '知らんけど',
       },
       {
-        content: 'this is 4th content',
+        content: 'by いつき',
       },
     ],
     4: [
       {
-        content: 'this is first content 4',
+        content: '私みたいに',
       },
       {
-        content: 'this is second content',
+        content: '自炊すれば、食費うくねん',
       },
       {
-        content: 'this is third content',
+        content: '将来うちカフェやろおもてんねん',
       },
       {
-        content: 'this is 4th content',
+        content: 'by いつき',
       },
     ],
   },

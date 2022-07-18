@@ -1,54 +1,48 @@
 <template>
-  <div class="result-page">
-    <h2 class="label">いつきからのお言葉やねん</h2>
-    <div class="text">
-      <p>予告のないDestiny（Destiny）</p>
-      <p>一秒後にはHistory（History）</p>
-      <p>I, My, Me, Mineじゃ 表現もできないさ</p>
-      <p>君というPrinceがいなきゃI'mゼロ人称</p>
-      {{ this.$route.params.selectedContent }}
-
-      <p v-for="item in items" :key="item.id">{{ item.content }}</p>
+    <div class="result-page">
+        <h2 class="label">いつきからのお言葉やねん</h2>
+        <div class="text">
+            <p v-for="item in items" :key="item.id">{{ item.content }}</p>
+        </div>
+        <v-btn class="to-top" @click="toTop">TOPへ戻る</v-btn>
     </div>
-    <v-btn class="to-top" @click="toTop">TOPへ戻る</v-btn>
-  </div>
 </template>
 
 <script>
-import results from './values/resultValue'
+import results from "./values/resultValue";
 export default {
-  name: 'itsuki-result',
-  data() {
-    return {
-      items: [],
-    }
-  },
-  methods: {
-    toTop() {
-      this.$router.push({name: 'home'})
-    }
-  },
-  mounted() {
-    const selected = this.$route.params.selectedContent
-    const index = Number(selected.slice(0, 1))
-    const value = Number(selected.slice(1, 2))
-    this.items = results[index][value]
-  },
-}
+    name: "itsuki-result",
+    data() {
+        return {
+            items: [],
+        };
+    },
+    methods: {
+        toTop() {
+            this.$router.push({ name: "home" });
+        },
+    },
+    mounted() {
+        const selected = this.$route.params.selectedContent;
+        const index = Number(selected.slice(0, 1));
+        const value = Number(selected.slice(1, 2));
+        this.items = results[index][value];
+    },
+};
 </script>
 <style>
-  .result-page {
-    background-color: #6BE489;
+.result-page {
+    background-color: #6be489;
     min-height: 80vh;
-  }
-    .label {
+}
+.label {
     text-align: center;
     color: white;
     padding-top: 100px;
     font-family: bold;
     font-size: 50px;
-  }
-  .text {
+}
+.text {
     text-align: center;
     color: white;
     padding-top: 10px;
@@ -56,8 +50,8 @@ export default {
     font-weight: 900;
     font-size: 40px;
     padding-top: 30px;
-  }
-  .to-top {
+}
+.to-top {
     margin-left: 45%;
-  }
+}
 </style>
