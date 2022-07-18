@@ -6,19 +6,44 @@
       <p>一秒後にはHistory（History）</p>
       <p>I, My, Me, Mineじゃ 表現もできないさ</p>
       <p>君というPrinceがいなきゃI'mゼロ人称</p>
+
+      <p v-for="item in items" :key="item.id">{{ item.content }}</p>
     </div>
     <v-btn class="to-top" @click="toTop">TOPへ戻る</v-btn>
   </div>
 </template>
 
 <script>
+import results from './resultValue'
 export default {
   name: 'itsuki-result',
+  data() {
+    return {
+      result: '',
+      items: [],
+    }
+  },
   methods: {
     toTop() {
       this.$router.push({name: 'home'})
     }
-  }
+  },
+  mounted() {
+    const selected = this.$route.params.selectedContent
+    switch (selected) {
+      case '0':
+        this.result = '今日も朝帰り'
+        console.log('results', results[0].contents)
+        this.items = results[0].contents
+        break;
+      case '1':
+        this.result = '今日もTinder'
+        this.items = results[1].contents
+        break;
+      default:
+          this.result = '明日も男とデート'
+    }
+  },
 }
 </script>
 <style>
