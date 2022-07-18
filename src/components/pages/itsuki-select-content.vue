@@ -2,7 +2,7 @@
   <div class="select-page">
     {{ $route.params.selected }}
     <h2>悩みはなんやねん？</h2>
-    <v-radio-group column class="radio-group" v-model="selected">
+    <v-radio-group column class="radio-group" v-model="selectedContent">
       <v-radio class="radio" label="90番目の女が見つからんねん" value="0"></v-radio>
       <v-radio class="radio" label="東京に女がおらんねん" value="1"></v-radio>
       <v-radio class="radio" label="Tinderやってると疑われてるねん" value="2"></v-radio>
@@ -14,15 +14,16 @@
 
 <script>
 export default {
+
   name: 'itsuki-select-content',
   data() {
     return {
-
+      selectedContent: '',
     }
   },
   methods: {
     submit() {
-      this.$router.push({name: 'result'})
+      this.$router.push({name: 'result', params:{selectedContent: this.selectedContent}})
     }
   },
 }
