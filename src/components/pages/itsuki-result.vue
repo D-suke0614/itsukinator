@@ -4,8 +4,9 @@
         <div class="text">
             <p v-for="item in items" :key="item.id">{{ item.content }}</p>
         </div>
-        <v-btn class="to-top" @click="toTop">TOPへ戻る</v-btn>
-    </div>
+    <v-btn class="to-top btn white--text text-h5 font-weight-black" @click="toTop" color="#897DD8">TOPへ戻る</v-btn>
+  </div>
+
 </template>
 
 <script>
@@ -31,11 +32,11 @@ export default {
 };
 </script>
 <style>
-.result-page {
-    background-color: #6be489;
-    min-height: 80vh;
-}
-.label {
+  .result-page {
+    background-color: #6BE489;
+    min-height: 90vh;
+  }
+    .label {
     text-align: center;
     color: white;
     padding-top: 100px;

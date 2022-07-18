@@ -1,20 +1,25 @@
 <template>
   <div class="nickname-page">
-    <h2 class="label">ニックネームをニックネームを入力しろやねん！</h2>
+    <h2 class="label">ニックネームを入力しろやねん！</h2>
     <v-form class="form">
       <!-- validationは後で実装 -->
-      <v-text-field v-model="nickname" required :counter="15" :error-messages="nicknameError" label="Nickname"></v-text-field>
-      <v-btn
-      class="submit"
-      @click="submit"
-      >
-        Next
-      </v-btn>
-      <v-btn
-      @click="clear"
-      >
-        Clear
-      </v-btn>
+      <v-text-field v-model="nickname" required :counter="15" :error-messages="nicknameError" label="ニックネーム" solo></v-text-field>
+      <div class="button-container">
+        <v-btn
+          class="submit btn white--text text-h5 font-weight-black"
+          @click="submit"
+          color="#897DD8"
+          :disabled="!nickname"
+        >
+          次  へ
+        </v-btn>
+        <v-btn
+          class="btn"
+          @click="clear"
+        >
+          クリア
+        </v-btn>
+      </div>
     </v-form>
   </div>
 </template>
@@ -58,7 +63,7 @@ export default {
 <style>
   .nickname-page {
     background-color: #6BE489;
-    min-height: 80vh;
+    min-height: 90vh;
   }
   .label {
     text-align: center;
@@ -66,6 +71,7 @@ export default {
     padding-top: 100px;
     font-family: bold;
     font-size: 50px;
+    margin-bottom: 30px;
   }
   .form {
     margin-top: 20vh;
@@ -74,5 +80,15 @@ export default {
   }
   .submit {
     margin-right: 20px;
+  }
+  .button-container {
+    display: flex;
+    justify-content: center;
+  }
+  .btn {
+    height: 50px;
+  }
+  .input-container {
+    width: 50%;
   }
 </style>

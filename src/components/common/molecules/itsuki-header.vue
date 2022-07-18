@@ -1,19 +1,15 @@
 <template>
   <div>
     <v-toolbar
-      dark
-      prominent
-      src="https://cdn.vuetifyjs.com/images/backgrounds/vbanner.jpg"
+      color="#897DD8"
     >
-      <v-app-bar-nav-icon></v-app-bar-nav-icon>
-
-      <v-toolbar-title @click="home">ITSUKINATOR</v-toolbar-title>
-
-      <v-spacer></v-spacer>
-
-      <v-btn icon>
-        <v-icon>mdi-export</v-icon>
-      </v-btn>
+      <div class="header-container">
+        <v-btn icon @click="home">
+          <v-img class="itsuki-logo" src="../../../assets/itsuki-logo.png"></v-img>
+        </v-btn>
+        <v-spacer></v-spacer>
+      </div>
+      
     </v-toolbar>
   </div>
 </template>
@@ -34,3 +30,17 @@ export default {
   }
 }
 </script>
+
+<style>
+  .header-container {
+    width: 80%;
+    margin: 0 auto;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+  }
+  .itsuki-logo {
+    height: 60px;
+    width: 60px;
+  }
+</style>
