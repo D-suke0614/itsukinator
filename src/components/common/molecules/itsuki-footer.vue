@@ -1,10 +1,10 @@
 <template>
-  <v-footer padless color="white">
+  <v-footer padless color="#897DD8">
     <v-col
       class="text-center"
       cols="12"
     >
-      {{ new Date().getFullYear() }} — <strong>itsuki.com</strong>
+      @ {{ new Date().getFullYear() }} - seed-k
     </v-col>
   </v-footer>
 </template>
@@ -20,3 +20,9 @@ export default {
   },
 }
 </script>
+
+<style>
+  .text-center {
+    color: #fff;
+  }
+</style>

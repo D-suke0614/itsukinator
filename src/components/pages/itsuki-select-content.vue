@@ -1,17 +1,24 @@
 <template>
     <div class="select-page">
-        <h2>悩みはなんやねん？</h2>
+        <!-- {{ $route.params.selected }} -->
+        <h2 class="label">悩みはなんやねん？</h2>
         <v-radio-group column class="radio-group" v-model="selectedContent">
             <v-radio
-                class="radio"
+                class="radio text-large"
                 v-for="item in items"
                 :key="item.id"
                 :label="item.content"
                 :value="item.value"
+                color="#897DD8"
             >
+            <template v-slot:label>
+              <div class="text-large"><strong class="white--text">{{ item.content }}</strong></div>
+            </template>
             </v-radio>
         </v-radio-group>
-        <v-btn class="submit" @click="submit">次へ</v-btn>
+        <div class="select-content-button-container">
+            <v-btn class="submit btn white--text text-h5 font-weight-black" @click="submit" color="#897DD8">次へ</v-btn>
+        </div>
     </div>
 </template>
 
@@ -55,6 +62,19 @@ export default {
 <style>
 .select-page {
     background-color: #ebe568;
-    min-height: 80vh;
+    min-height: 90vh;
 }
+.label {
+    text-align: center;
+    color: white;
+    padding-top: 100px;
+    font-family: bold;
+    font-size: 70px;
+  }
+  .select-content-button-container {
+    text-align: center;
+  }
+  .text-large {
+    font-size: 40px;
+  }
 </style>

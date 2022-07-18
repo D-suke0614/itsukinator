@@ -2,15 +2,13 @@
   <div class="result-page">
     <h2 class="label">いつきからのお言葉やねん</h2>
     <div class="text">
-      <p>予告のないDestiny（Destiny）</p>
-      <p>一秒後にはHistory（History）</p>
-      <p>I, My, Me, Mineじゃ 表現もできないさ</p>
-      <p>君というPrinceがいなきゃI'mゼロ人称</p>
-      {{ this.$route.params.selectedContent }}
-
+      <p class="white--text">予告のないDestiny（Destiny）</p>
+      <p class="white--text">一秒後にはHistory（History）</p>
+      <p class="white--text">I, My, Me, Mineじゃ 表現もできないさ</p>
+      <p class="white--text">君というPrinceがいなきゃI'mゼロ人称</p>
       <p v-for="item in items" :key="item.id">{{ item.content }}</p>
     </div>
-    <v-btn class="to-top" @click="toTop">TOPへ戻る</v-btn>
+    <v-btn class="to-top btn white--text text-h5 font-weight-black" @click="toTop" color="#897DD8">TOPへ戻る</v-btn>
   </div>
 </template>
 
@@ -39,7 +37,7 @@ export default {
 <style>
   .result-page {
     background-color: #6BE489;
-    min-height: 80vh;
+    min-height: 90vh;
   }
     .label {
     text-align: center;

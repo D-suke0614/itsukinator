@@ -1,7 +1,7 @@
 <template>
   <v-app>
     <itsukiHeader/>
-    <v-main class="container">
+    <v-main class="main-container">
       <router-view></router-view>
     </v-main>
     <itsukiFooter/>
@@ -25,7 +25,7 @@ export default {
 };
 </script>
 <style>
-  .container {
-    margin: 0 auto;
+  .main-container {
+    min-width: 90vw;
   }
 </style>
