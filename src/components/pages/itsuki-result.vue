@@ -9,7 +9,7 @@
 
       <p v-for="item in items" :key="item.id">{{ item.content }}</p>
     </div>
-    <v-btn class="to-top btn white--text" @click="toTop" color="#897DD8">TOPへ戻る</v-btn>
+    <v-btn class="to-top btn white--text text-h5 font-weight-black" @click="toTop" color="#897DD8">TOPへ戻る</v-btn>
   </div>
 </template>
 

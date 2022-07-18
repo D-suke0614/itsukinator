@@ -11,10 +11,13 @@
                 :value="item.value"
                 color="#897DD8"
             >
+            <template v-slot:label>
+              <div class="text-large"><strong class="white--text">{{ item.content }}</strong></div>
+            </template>
             </v-radio>
         </v-radio-group>
         <div class="select-content-button-container">
-            <v-btn class="submit btn white--text" @click="submit" color="#897DD8">次へ</v-btn>
+            <v-btn class="submit btn white--text text-h5 font-weight-black" @click="submit" color="#897DD8">次へ</v-btn>
         </div>
     </div>
 </template>

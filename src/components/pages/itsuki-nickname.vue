@@ -6,7 +6,7 @@
       <v-text-field v-model="nickname" required :counter="15" :error-messages="nicknameError" label="ニックネーム" solo></v-text-field>
       <div class="button-container">
         <v-btn
-          class="submit btn white--text"
+          class="submit btn white--text text-h5 font-weight-black"
           @click="submit"
           color="#897DD8"
         >

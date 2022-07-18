@@ -5,7 +5,7 @@
       <h1 id="title">いつきが全て！</h1>
     </div>
     <div class="home-button-container">
-      <v-btn class="btn white--text" @click="submit" color="#897DD8" height="70" large>悩みを相談してみる</v-btn>
+      <v-btn class="btn white--text text-h5 font-weight-black" @click="submit" color="#897DD8" height="70" large>悩みを相談してみる</v-btn>
     </div>
     <!-- <v-img class="main-img" src="../../../public/himawaris.jpeg"></v-img> -->
   </div>
