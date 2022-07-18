@@ -19,7 +19,6 @@ export default {
   name: 'itsuki-result',
   data() {
     return {
-      result: '',
       items: [],
     }
   },
@@ -32,16 +31,13 @@ export default {
     const selected = this.$route.params.selectedContent
     switch (selected) {
       case '0':
-        this.result = '今日も朝帰り'
         console.log('results', results[0].contents)
         this.items = results[0].contents
         break;
       case '1':
-        this.result = '今日もTinder'
         this.items = results[1].contents
         break;
       default:
-          this.result = '明日も男とデート'
     }
   },
 }
