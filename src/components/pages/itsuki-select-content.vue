@@ -17,7 +17,14 @@
             </v-radio>
         </v-radio-group>
         <div class="select-content-button-container">
-            <v-btn class="submit btn white--text text-h5 font-weight-black" @click="submit" color="#897DD8">次へ</v-btn>
+            <v-btn
+              class="submit btn white--text text-h5 font-weight-black"
+              @click="submit"
+              color="#897DD8"
+              :disabled="!selectedContent"
+              >
+              次へ
+              </v-btn>
         </div>
     </div>
 </template>
@@ -28,7 +35,7 @@ export default {
     name: "itsuki-select-content",
     data() {
         return {
-            selectedContent: "",
+          selectedContent: "",
             items: [],
         };
     },
