@@ -1,68 +1,84 @@
 const selectcontents = [
-  {
-      contents: [
-          {
-              content: '90番目の女が見つからんねん',
-          },
-          {
-              content: '東京に女がおらんねん'
-          },
-          {
-              content: 'Tinderやってると疑われてるねん'
-          },
-          {
-              content: '今日も朝帰りしてしもてん'
-          },
-      ],
-  },
-  {
-      contents: [
-          {
-              content: '仕事辞めたいねん'
-          },
-          {
-              content: '貢献できる自信ないねん'
-          },
-          {
-              content: '社長が嫌いやねん'
-          },
-          {
-              content: '通勤だるいねん'
-          },
-      ],
-  },
-  {
-      contents: [
-          {
-              content: '友達が少ないねん'
-          },
-          {
-              content: 'あああ'
-          },
-          {
-              content: 'Tinderやってると疑われてるねん'
-          },
-          {
-              content: '今日も朝帰りしてしもてん'
-          },
-      ],
-  },
-  {
-      contents: [
-          {
-              content: '浪費癖がすごいねん'
-          },
-          {
-              content: '金貯まらんねん'
-          },
-          {
-              content: '奢りたくないねん'
-          },
-          {
-              content: '食費がバカにならんねん'
-          },
-      ],
-  }
+    {
+        contents: [
+            {
+                value: '01',
+                content: '90番目の女が見つからんねん',
+            },
+            {
+                value: '02',
+                content: '東京に女がおらんねん'
+            },
+            {
+                value: '02',
+                content: 'Tinderやってると疑われてるねん'
+            },
+            {
+                value: '03',
+                content: '今日も朝帰りしてしもてん'
+            },
+        ],
+    },
+    {
+        contents: [
+            {
+                value: '11',
+                content: '仕事辞めたいねん'
+            },
+            {
+                value: '12',
+                content: '貢献できる自信ないねん'
+            },
+            {
+                value: '13',
+                content: '社長が嫌いやねん'
+            },
+            {
+                value: '14',
+                content: '通勤だるいねん'
+            },
+        ],
+    },
+    {
+        contents: [
+            {
+                value: '21',
+                content: '友達が少ないねん'
+            },
+            {
+                value: '22',
+                content: 'あああ'
+            },
+            {
+                value: '23',
+                content: 'Tinderやってると疑われてるねん'
+            },
+            {
+                value: '24',
+                content: '今日も朝帰りしてしもてん'
+            },
+        ],
+    },
+    {
+        contents: [
+            {
+                value: '31',
+                content: '浪費癖がすごいねん'
+            },
+            {
+                value: '32',
+                content: '金貯まらんねん'
+            },
+            {
+                value: '33',
+                content: '奢りたくないねん'
+            },
+            {
+                value: '34',
+                content: '食費がバカにならんねん'
+            },
+        ],
+    }
 ]
 
 export default selectcontents
