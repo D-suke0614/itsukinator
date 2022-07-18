@@ -6,7 +6,6 @@
       <p class="white--text">一秒後にはHistory（History）</p>
       <p class="white--text">I, My, Me, Mineじゃ 表現もできないさ</p>
       <p class="white--text">君というPrinceがいなきゃI'mゼロ人称</p>
-
       <p v-for="item in items" :key="item.id">{{ item.content }}</p>
     </div>
     <v-btn class="to-top btn white--text text-h5 font-weight-black" @click="toTop" color="#897DD8">TOPへ戻る</v-btn>
@@ -29,15 +28,9 @@ export default {
   },
   mounted() {
     const selected = this.$route.params.selectedContent
-    switch (selected) {
-      case '0':
-        this.items = results[0].contents
-        break;
-      case '1':
-        this.items = results[1].contents
-        break;
-      default:
-    }
+    const index = Number(selected.slice(0, 1))
+    const value = Number(selected.slice(1, 2))
+    this.items = results[index][value]
   },
 }
 </script>
