@@ -1,8 +1,13 @@
 <template>
   <div class="home-page">
-    <h1 id="title">この世はいつきが全て！</h1>
-    <v-btn class="btn" @click="submit">悩みを相談してみる</v-btn>
-    <v-img class="main-img" src="../../../public/himawaris.jpeg"></v-img>
+    <div>
+      <h1 id="title">この世は</h1>
+      <h1 id="title">いつきが全て！</h1>
+    </div>
+    <div class="home-button-container">
+      <v-btn class="btn white--text" @click="submit" color="#897DD8" height="70" large>悩みを相談してみる</v-btn>
+    </div>
+    <!-- <v-img class="main-img" src="../../../public/himawaris.jpeg"></v-img> -->
   </div>
 </template>
 
@@ -27,23 +32,33 @@ export default {
 <style>
 .home-page {
   background-color: #EBE568;
-  min-height: 80vh;
-  padding-bottom: 50px;
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
-  #title {
-    text-align: center;
-    margin-top: 30px;
-    margin-bottom: 30px;
-  }
-  .btn {
-    /* 暫定対応 */
-    margin-left: 42%;
-    margin-bottom: 50px;
-  }
-  .main-img {
-    height: 70%;
-    margin-bottom: 30px;
-    margin-right: 20%;
-    margin-left: 20%;
-  }
+.home-page div {
+  width: 80%;
+  margin: 0 auto;
+}
+#title {
+  margin-bottom: 30px;
+  font-size: 90px;
+  color: #fff;
+  text-shadow: 5px 5px 5px #808080;
+}
+.btn {
+  text-align: right;
+  border-radius: 35px;
+  box-shadow: 5px 5px 5px #808080;
+}
+.main-img {
+  height: 70%;
+  margin-right: 20%;
+  margin-left: 20%;
+}
+.home-button-container {
+  display: flex;
+  justify-content: flex-end;
+}
 </style>
