@@ -1,6 +1,5 @@
 <template>
     <div class="select-page">
-        <!-- {{ $route.params.selected }} -->
         <h2 class="label">悩みはなんやねん？</h2>
         <v-radio-group column class="radio-group" v-model="selectedContent">
             <v-radio
@@ -12,19 +11,19 @@
                 color="#897DD8"
             >
             <template v-slot:label>
-              <div class="text-large"><strong class="white--text">{{ item.content }}</strong></div>
+            <div class="text-large"><strong class="white--text">{{ item.content }}</strong></div>
             </template>
             </v-radio>
         </v-radio-group>
         <div class="select-content-button-container">
             <v-btn
-              class="submit btn white--text text-h5 font-weight-black"
-              @click="submit"
-              color="#897DD8"
-              :disabled="!selectedContent"
-              >
-              次へ
-              </v-btn>
+            class="submit btn white--text text-h5 font-weight-black"
+            @click="submit"
+            color="#897DD8"
+            :disabled="!selectedContent"
+            >
+            次へ
+            </v-btn>
         </div>
     </div>
 </template>
@@ -35,7 +34,7 @@ export default {
     name: "itsuki-select-content",
     data() {
         return {
-          selectedContent: "",
+            selectedContent: "",
             items: [],
         };
     },
@@ -77,11 +76,11 @@ export default {
     padding-top: 100px;
     font-family: bold;
     font-size: 70px;
-  }
-  .select-content-button-container {
+}
+    .select-content-button-container {
     text-align: center;
-  }
-  .text-large {
+}
+    .text-large {
     font-size: 40px;
-  }
+}
 </style>
