@@ -10,7 +10,7 @@
         </v-btn>
         <v-spacer></v-spacer>
       </div>
-      
+
     </v-toolbar>
   </div>
 </template>

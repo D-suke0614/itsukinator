@@ -9,17 +9,17 @@
           class="submit btn white--text text-h6 font-weight-black"
           @click="submit"
           color="#897DD8"
+          :disabled="!nickname"
         >
-          次  へ
+          <span class="btn_font">次  へ</span>
         </v-btn>
         <v-btn
           class="btn text-h6 font-weight-black"
           @click="clear"
         >
-          クリア
+          <span class="btn_font">クリア</span>
         </v-btn>
       </div>
-      
     </v-form>
   </div>
 </template>
