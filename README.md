@@ -24,3 +24,4 @@ yarn lint
 - vuetify
 - vue-router
 - vuelidate
+- vue-loading-template
