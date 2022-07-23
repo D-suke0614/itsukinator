@@ -2,11 +2,15 @@
   <div class="result-page">
     <h2 class="label">いつきからのお言葉やねん</h2>
     <div class="text">
-      <p class="white--text">予告のないDestiny（Destiny）</p>
+      <!-- <p class="white--text">予告のないDestiny（Destiny）</p>
       <p class="white--text">一秒後にはHistory（History）</p>
       <p class="white--text">I, My, Me, Mineじゃ 表現もできないさ</p>
-      <p class="white--text">君というPrinceがいなきゃI'mゼロ人称</p>
-      <p v-for="item in items" :key="item.id">{{ item.content }}</p>
+      <p class="white--text">君というPrinceがいなきゃI'mゼロ人称</p> -->
+      <transition-group appera name="text">
+        <p v-for="item in items" :key="item">
+          {{ item.content }}
+        </p>
+      </transition-group>
     </div>
     <v-btn class="to-top btn white--text text-h5 font-weight-black" @click="toTop" color="#897DD8">TOPへ戻る</v-btn>
   </div>
@@ -57,5 +61,14 @@ export default {
   }
   .to-top {
     margin-left: 45%;
+  }
+  .text-enter {
+    opacity: 0;
+  }
+  .text-enter-active {
+    transition: opacity 1s;
+  }
+  .text-enter-to {
+    opacity: 1;
   }
 </style>
