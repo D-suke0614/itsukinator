@@ -1,6 +1,6 @@
 <template>
   <div class="select-page">
-    <h2 class="label">悩みのカテゴリーを選択しろやねん！</h2>
+    <h2 id="title2" class="label">悩みのカテゴリーを選択しろやねん！</h2>
     <v-radio-group column class="radio-group" v-model="selected">
       <v-radio value="0" color="#897DD8">
         <template v-slot:label>
@@ -24,7 +24,7 @@
       </v-radio>
     </v-radio-group>
     <div class="select-catergory-button-container">
-      <v-btn class="submit btn white--text text-h5 font-weight-black" @click="submit" color="#897DD8">次へ</v-btn>
+      <v-btn class="submit btn white--text text-h6 font-weight-black" @click="submit" color="#897DD8">次へ</v-btn>
     </div>
   </div>
 </template>
@@ -56,6 +56,7 @@ export default {
     padding-top: 100px;
     font-family: bold;
     font-size: 70px;
+     font-family: "Sawarabi Mincho";
   }
   .radio-group {
     display: flex;

@@ -2,6 +2,7 @@
   <div>
     <v-toolbar
       color="#897DD8"
+      class="change-fonts"
     >
       <div class="header-container">
         <v-btn icon @click="home">
@@ -42,5 +43,8 @@ export default {
   .itsuki-logo {
     height: 60px;
     width: 60px;
+  }
+  .change-fonts {
+    font-family: "Sawarabi Mincho"; 
   }
 </style>

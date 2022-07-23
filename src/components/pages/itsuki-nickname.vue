@@ -1,19 +1,19 @@
 <template>
   <div class="nickname-page">
-    <h2 class="label">ニックネームを入力しろやねん！</h2>
+    <h2 id="title2" class="label">ニックネームを入力しろやねん！</h2>
     <v-form class="form">
       <!-- validationは後で実装 -->
       <v-text-field v-model="nickname" required :counter="15" :error-messages="nicknameError" label="ニックネーム" solo></v-text-field>
       <div class="button-container">
         <v-btn
-          class="submit btn white--text text-h5 font-weight-black"
+          class="submit btn white--text text-h6 font-weight-black"
           @click="submit"
           color="#897DD8"
         >
           次  へ
         </v-btn>
         <v-btn
-          class="btn"
+          class="btn text-h6 font-weight-black"
           @click="clear"
         >
           クリア
@@ -87,6 +87,7 @@ export default {
   }
   .btn {
     height: 50px;
+    font-family: "Sawarabi Mincho"; 
   }
   .input-container {
     width: 50%;

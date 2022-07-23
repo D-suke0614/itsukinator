@@ -1,11 +1,11 @@
 <template>
   <div class="result-page">
-    <h2 class="label">いつきからのお言葉やねん</h2>
+    <h2 id="title2" class="label">いつきからのお言葉やねん</h2>
     <div class="text">
-      <p class="white--text">予告のないDestiny（Destiny）</p>
-      <p class="white--text">一秒後にはHistory（History）</p>
-      <p class="white--text">I, My, Me, Mineじゃ 表現もできないさ</p>
-      <p class="white--text">君というPrinceがいなきゃI'mゼロ人称</p>
+      <p id="title2" class="white--text">予告のないDestiny（Destiny）</p>
+      <p id="title2" class="white--text">一秒後にはHistory（History）</p>
+      <p id="title2" class="white--text">I, My, Me, Mineじゃ 表現もできないさ</p>
+      <p id="title2" class="white--text">君というPrinceがいなきゃI'mゼロ人称</p>
       <p v-for="item in items" :key="item.id">{{ item.content }}</p>
     </div>
     <v-btn class="to-top btn white--text text-h5 font-weight-black" @click="toTop" color="#897DD8">TOPへ戻る</v-btn>
