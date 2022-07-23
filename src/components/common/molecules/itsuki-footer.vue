@@ -24,5 +24,6 @@ export default {
 <style>
   .text-center {
     color: #fff;
+    font-family: "Sawarabi Mincho"; 
   }
 </style>

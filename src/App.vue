@@ -1,5 +1,5 @@
 <template>
-  <v-app>
+  <v-app class="font">
     <itsukiHeader/>
     <v-main class="main-container">
       <router-view></router-view>
@@ -25,7 +25,12 @@ export default {
 };
 </script>
 <style>
+  @import url("https://fonts.googleapis.com/css?family=Sawarabi+Mincho");
+
   .main-container {
     min-width: 90vw;
+  }
+  #app {
+    font-family: "Sawarabi Mincho";
   }
 </style>
