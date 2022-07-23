@@ -12,31 +12,33 @@
         </p>
       </transition-group>
     </div>
+
     <v-btn class="to-top btn white--text text-h5 font-weight-black" @click="toTop" color="#897DD8">TOPへ戻る</v-btn>
   </div>
+
 </template>
 
 <script>
-import results from './values/resultValue'
+import results from "./values/resultValue";
 export default {
-  name: 'itsuki-result',
-  data() {
-    return {
-      items: [],
-    }
-  },
-  methods: {
-    toTop() {
-      this.$router.push({name: 'home'})
-    }
-  },
-  mounted() {
-    const selected = this.$route.params.selectedContent
-    const index = Number(selected.slice(0, 1))
-    const value = Number(selected.slice(1, 2))
-    this.items = results[index][value]
-  },
-}
+    name: "itsuki-result",
+    data() {
+        return {
+            items: [],
+        };
+    },
+    methods: {
+        toTop() {
+            this.$router.push({ name: "home" });
+        },
+    },
+    mounted() {
+        const selected = this.$route.params.selectedContent;
+        const index = Number(selected.slice(0, 1));
+        const value = Number(selected.slice(1, 2));
+        this.items = results[index][value];
+    },
+};
 </script>
 <style>
   .result-page {
@@ -49,8 +51,8 @@ export default {
     padding-top: 100px;
     font-family: bold;
     font-size: 50px;
-  }
-  .text {
+}
+.text {
     text-align: center;
     color: white;
     padding-top: 10px;
@@ -58,8 +60,8 @@ export default {
     font-weight: 900;
     font-size: 40px;
     padding-top: 30px;
-  }
-  .to-top {
+}
+.to-top {
     margin-left: 45%;
   }
   .text-enter {

@@ -47,15 +47,15 @@ const selectcontents = [
             },
             {
                 value: '22',
-                content: 'あああ'
+                content: '人見知りやねん'
             },
             {
                 value: '23',
-                content: 'Tinderやってると疑われてるねん'
+                content: '人付き合いが好きやないねん'
             },
             {
                 value: '24',
-                content: '今日も朝帰りしてしもてん'
+                content: 'お調子者すぎてダルがられるねん'
             },
         ],
     },
