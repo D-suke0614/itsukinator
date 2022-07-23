@@ -5,10 +5,19 @@
       class="change-fonts"
     >
       <div class="header-container">
-        <v-btn icon @click="home">
-          <v-img class="itsuki-logo" src="../../../assets/itsuki-logo.png"></v-img>
-        </v-btn>
-        <v-spacer></v-spacer>
+        <div>
+          <v-btn icon @click="home">
+            <v-img class="itsuki-logo" src="../../../assets/itsuki-himawari-header.png"></v-img>
+          </v-btn>
+        </div>
+        <div class="header-right">
+          <v-btn icon>
+            <span class="white--text">利用規約</span>
+          </v-btn>
+          <v-btn icon>
+            <span class="white--text">プライバシーポリシー</span>
+          </v-btn>
+        </div>
       </div>
 
     </v-toolbar>
@@ -36,9 +45,10 @@ export default {
   .header-container {
     width: 80%;
     margin: 0 auto;
-    height: 10vh;
+    height: 15vh;
     display: flex;
     align-items: center;
+    justify-content: space-between;
   }
   .itsuki-logo {
     height: 60px;
@@ -46,5 +56,10 @@ export default {
   }
   .change-fonts {
     font-family: "Sawarabi Mincho"; 
+  }
+  .header-right {
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
   }
 </style>
