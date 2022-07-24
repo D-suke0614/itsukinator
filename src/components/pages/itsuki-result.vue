@@ -3,14 +3,15 @@
     <Loading v-show="isLoading"></Loading>
     <div v-show="!isLoading">
       <h2 id="title2" class="label">いつきからのお言葉やねん</h2>
-      <div class="text">
-        <transition-group appera name="text">
-          <p v-for="item in items" :key="item" id="title2" class="white--text">
-            {{ item.content }}
-          </p>
-        </transition-group>
+      <div class="result-wrapper">
+        <div class="text result-text clip-box-a">
+          <transition-group appera name="text">
+            <p v-for="item in items" :key="item" id="title2" class="gray--text result-text-border">
+              {{ item.content }}
+            </p>
+          </transition-group>
+        </div>
       </div>
-
       <v-btn
         class="to-top btn white--text text-h5 font-weight-black"
         @click="toTop"
@@ -54,7 +55,7 @@ export default {
 <style>
 .result-page {
   background-color: #6be489;
-  min-height: 90vh;
+  min-height: 86vh;
 }
 .label {
   text-align: center;
@@ -83,5 +84,47 @@ export default {
 }
 .text-enter-to {
   opacity: 1;
+}
+.result-text {
+  margin-bottom: 40px;
+  background-color: #ebe568;
+  width: 50%;
+  text-align: center;
+  box-shadow: 5px 5px 5px #808080;
+}
+
+.clip-box-a {
+ position: relative;
+ margin: 0 auto;
+ padding: 15px 35px 15px 25px;
+ width: 70%; /* ボックス幅 */
+ background-color: #ebe568; /* ボックス背景色 */
+ color: #555555; /* 文章色 */
+ border: 1px solid #ccc; /* 枠線 */
+ box-shadow: 1px 1px 1px #acacac; /* 影の色 */
+ margin-bottom: 30px;
+}
+.clip-box-a::before {
+ position: absolute;
+ content: '';
+ top: -15px;
+ right: 10px;
+ height: 55px;
+ width: 15px;
+ border: 3px solid #767575; /*クリップ色 */
+ background-color: none;
+ border-radius: 12px;
+ box-shadow: 1px 1px 2px #999;
+ transform: rotate(10deg);
+ z-index: 1;
+}
+.clip-box-a::after {
+ position: absolute;
+ content: '';
+ top: 0px;
+ width: 10px; 
+ right: 20px;
+ border: solid 5px #ebe568; /*背景色と同じ色にする*/
+ z-index: 2;
 }
 </style>

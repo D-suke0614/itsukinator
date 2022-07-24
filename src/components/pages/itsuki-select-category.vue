@@ -2,28 +2,28 @@
   <div class="select-page">
     <h2 id="title2" class="label">悩みのカテゴリーを選択しろやねん！</h2>
     <v-radio-group column class="radio-group" v-model="selected">
-      <v-radio value="0" color="#897DD8">
+      <v-radio class="radio" value="0" color="#897DD8">
         <template v-slot:label>
           <div class="text-large">
             <strong class="white--text">恋愛やねん</strong>
           </div>
         </template>
       </v-radio>
-      <v-radio value="1" color="#897DD8">
+      <v-radio  class="radio" value="1" color="#897DD8">
         <template v-slot:label>
           <div class="text-large">
             <strong class="white--text">仕事やねん</strong>
           </div>
         </template>
       </v-radio>
-      <v-radio value="2" color="#897DD8">
+      <v-radio  class="radio" value="2" color="#897DD8">
         <template v-slot:label>
           <div class="text-large">
             <strong class="white--text">人間関係やねん</strong>
           </div>
         </template>
       </v-radio>
-      <v-radio value="3" color="#897DD8">
+      <v-radio  class="radio" value="3" color="#897DD8">
         <template v-slot:label>
           <div class="text-large">
             <strong class="white--text">お金やねん</strong>
@@ -66,7 +66,7 @@ export default {
 <style>
 .select-page {
   background-color: #ebe568;
-  min-height: 90vh;
+  min-height: 86vh;
 }
 .label {
   text-align: center;
@@ -81,10 +81,8 @@ export default {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 40%;
+  width: 30%;
   margin: 0 auto;
-  /* margin-left: 20vw; */
-  /* margin-right: 30vw; */
 }
 .radio {
   margin-bottom: 30px !important;
@@ -94,5 +92,8 @@ export default {
 }
 .text-large {
   font-size: 40px;
+}
+.radio {
+    height: 60px;
 }
 </style>
