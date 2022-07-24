@@ -8,6 +8,7 @@
         <div>
           <v-btn icon @click="toHome">
             <v-img class="itsuki-logo" src="../../../assets/itsuki-himawari-header.png"></v-img>
+            itsukinator
           </v-btn>
         </div>
         <div class="header-right">
