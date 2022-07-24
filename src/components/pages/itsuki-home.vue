@@ -18,7 +18,10 @@
         </span>
       </v-btn>
     </div>
-    <img class="main-img" src="../../assets/itsuki-home.png"></img>
+    <img class="img1" src="../../assets/itsuki-bike.png">
+    <img class="img2" src="../../assets/itsuki-bike2.png">
+    <img class="img3" src="../../assets/itsuki-peace.png">
+    <img class="main-img" src="../../assets/kakamu.png">
   </div>
 </template>
 
@@ -64,11 +67,11 @@ export default {
   font-family: "Sawarabi Mincho";
 }
 .main-img {
-  height: 100%;
+  height: 70%;
   /* width: 20%; */
   position: absolute;
-  top: 10%;
-  right: 28%;
+  top: 30%;
+  right: 70%;
 }
 .home-button-container {
   display: flex;
@@ -79,5 +82,26 @@ export default {
 }
 .btn_font {
   font-family: "Sawarabi Mincho";
+}
+.img1 {
+  height: 45%;
+  /* width: 20%; */
+  position: absolute;
+  top: 62%;
+  right: 0%;
+}
+.img2 {
+  height: 45%;
+  /* width: 20%; */
+  position: absolute;
+  top: 57%;
+  right: 35%;
+}
+.img3 {
+  height: 50%;
+  /* width: 20%; */
+  position: absolute;
+  top: 5%;
+  right: 10%;
 }
 </style>
