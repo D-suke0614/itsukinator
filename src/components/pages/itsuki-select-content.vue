@@ -1,9 +1,9 @@
 <template>
   <div class="select-page">
     <h2 id="title2" class="label">悩みは何やねん？</h2>
-    <v-radio-group column class="radio-group" v-model="selectedContent">
+    <v-radio-group column class="radio-group-content" v-model="selectedContent">
       <v-radio
-        class="text-large"
+        class="text-large radio"
         v-for="item in items"
         :key="item.id"
         :label="item.content"
@@ -11,7 +11,7 @@
         color="#897DD8"
       >
         <template v-slot:label>
-          <div class="radio text-large">
+          <div class="text-large">
             <strong class="white--text">{{ item.content }}</strong>
           </div>
         </template>
@@ -70,7 +70,7 @@ export default {
 <style>
 .select-page {
   background-color: #ebe568;
-  min-height: 90vh;
+  min-height: 86vh;
 }
 .label {
   text-align: center;
@@ -89,4 +89,9 @@ export default {
   height: 50vh;
   display: flex;
 }
+.radio-group-content {
+    width: 50%;
+    margin: 0 auto;
+}
+
 </style>

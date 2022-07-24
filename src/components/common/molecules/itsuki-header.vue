@@ -11,12 +11,12 @@
           </v-btn>
         </div>
         <div class="header-right">
-          <v-btn icon>
+          <a class="header-right-button">
             <span class="white--text">利用規約</span>
-          </v-btn>
-          <v-btn icon>
+          </a>
+          <a class="header-right-button">
             <span class="white--text">プライバシーポリシー</span>
-          </v-btn>
+          </a>
         </div>
       </div>
 
@@ -58,8 +58,11 @@ export default {
     font-family: "Sawarabi Mincho"; 
   }
   .header-right {
-    width: 20%;
+    width: 25%;
     display: flex;
     justify-content: space-between;
+  }
+  .header-right-button {
+    margin-left: 10px;
   }
 </style>

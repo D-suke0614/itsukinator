@@ -17,7 +17,7 @@
           class="btn text-h6 font-weight-black"
           @click="clear"
         >
-          <span class="btn_font">クリア</span>
+          <span class="btn_font nickname-button-clear">クリア</span>
         </v-btn>
       </div>
     </v-form>
@@ -63,7 +63,7 @@ export default {
 <style>
   .nickname-page {
     background-color: #6BE489;
-    min-height: 90vh;
+    min-height: 86vh;
   }
   .label {
     text-align: center;
@@ -91,5 +91,8 @@ export default {
   }
   .input-container {
     width: 50%;
+  }
+  .nickname-button-clear {
+    color: gray;
   }
 </style>
