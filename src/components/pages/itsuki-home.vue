@@ -18,7 +18,7 @@
         </span>
       </v-btn>
     </div>
-    <!-- <v-img class="main-img" src="../../../public/himawaris.jpeg"></v-img> -->
+    <img class="main-img" src="../../assets/itsuki-home.png"></img>
   </div>
 </template>
 
@@ -44,6 +44,7 @@ export default {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  position: relative;
 }
 .home-page div {
   width: 80%;
@@ -63,9 +64,11 @@ export default {
   font-family: "Sawarabi Mincho";
 }
 .main-img {
-  height: 70%;
-  margin-right: 20%;
-  margin-left: 20%;
+  height: 100%;
+  /* width: 20%; */
+  position: absolute;
+  top: 10%;
+  right: 28%;
 }
 .home-button-container {
   display: flex;
