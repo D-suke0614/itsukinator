@@ -5,6 +5,8 @@ import Nickname from './components/pages/itsuki-nickname'
 import SelectCategory from './components/pages/itsuki-select-category'
 import SelectContent from './components/pages/itsuki-select-content'
 import Result from './components/pages/itsuki-result'
+import Terms from './components/common/pages/policy/itsuki-terms'
+import Privacy from './components/common/pages/policy/itsuki-privacy-policy'
 
 Vue.use(VueRouter)
 
@@ -33,7 +35,17 @@ const routes = [
     path: '/result',
     name: 'result',
     component: Result,
-  }
+  },
+  {
+    path: '/terms',
+    name: 'terms',
+    component: Terms,
+  },
+  {
+    path: 'privacy',
+    name: 'privacy',
+    component: Privacy,
+  },
 ]
 
 const router = new VueRouter({
