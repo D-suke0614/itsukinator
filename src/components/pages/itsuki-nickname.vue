@@ -43,7 +43,10 @@ export default {
   },
   methods: {
     submit() {
-      this.$router.push({name: 'select-category'})
+      this.$router.push({
+        name: 'select-category',
+        params: { nickname: this.nickname },
+      });
     },
     clear() {
       return this.nickname = ''

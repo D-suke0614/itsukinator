@@ -38,17 +38,22 @@ export default {
     return {
       selectedContent: "",
       items: [],
+      nackname: '',
     };
   },
   methods: {
     submit() {
       this.$router.push({
         name: "result",
-        params: { selectedContent: this.selectedContent },
-      })
+        params: { 
+          selectedContent: this.selectedContent,
+          nickname: this.nickname,
+           }, 
+      });
     },
   },
   mounted() {
+    this.nickname = this.$route.params.nickname;
     const selected = this.$route.params.selected;
     switch (selected) {
       case "0":
