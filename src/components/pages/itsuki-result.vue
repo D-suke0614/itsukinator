@@ -1,7 +1,7 @@
 <template>
-  <div>
+  <div class="result-page">
     <Loading v-show="isLoading"></Loading>
-    <div class="result-page" v-show="!isLoading">
+    <div v-show="!isLoading">
       <h2 id="title2" class="label">いつきからのお言葉やねん</h2>
       <div class="text">
         <transition-group appera name="text">
@@ -42,7 +42,7 @@ export default {
   },
   mounted() {
     setTimeout(() => {
-      this.isLoading = false;
+      this.isLoading = false
       const selected = this.$route.params.selectedContent;
       const index = Number(selected.slice(0, 1));
       const value = Number(selected.slice(1, 2));
