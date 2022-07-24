@@ -6,15 +6,15 @@
     >
       <div class="header-container">
         <div>
-          <v-btn icon @click="home">
+          <v-btn icon @click="toHome">
             <v-img class="itsuki-logo" src="../../../assets/itsuki-himawari-header.png"></v-img>
           </v-btn>
         </div>
         <div class="header-right">
-          <v-btn icon>
+          <v-btn @click="toTerms" icon>
             <span class="white--text">利用規約</span>
           </v-btn>
-          <v-btn icon>
+          <v-btn @click="toPrivacy" icon>
             <span class="white--text">プライバシーポリシー</span>
           </v-btn>
         </div>
@@ -34,8 +34,14 @@ export default {
     }
   },
   methods: {
-    home() {
+    toHome() {
       this.$router.push({name: 'home'})
+    },
+    toTerms() {
+      this.$router.push({name: 'terms'})
+    },
+    toPrivacy() {
+      this.$router.push({name: 'privacy'})
     }
   }
 }
@@ -55,7 +61,7 @@ export default {
     width: 60px;
   }
   .change-fonts {
-    font-family: "Sawarabi Mincho"; 
+    font-family: "Sawarabi Mincho";
   }
   .header-right {
     width: 20%;
