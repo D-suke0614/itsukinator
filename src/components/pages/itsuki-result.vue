@@ -2,7 +2,7 @@
   <div class="result-page">
     <Loading v-show="isLoading"></Loading>
     <div v-show="!isLoading">
-      <h2 id="title2" class="label">いつきからのお言葉やねん</h2>
+      <h2 id="title2" class="label">{{ $route.params.nickname }}に<br>いつきからのお言葉やねん</h2>
       <div class="result-wrapper">
         <div class="text result-text clip-box-a">
           <transition-group appera name="text">
@@ -60,7 +60,7 @@ export default {
 .label {
   text-align: center;
   color: white;
-  padding-top: 100px;
+  padding-top: 50px;
   font-family: bold;
   font-size: 50px;
 }

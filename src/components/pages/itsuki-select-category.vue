@@ -50,15 +50,22 @@ export default {
   data() {
     return {
       selected: null,
+      nackname: '',
     };
   },
   methods: {
     submit() {
       this.$router.push({
         name: "select-content",
-        params: { selected: this.selected },
+        params: { 
+        selected: this.selected,
+        nickname: this.nickname, 
+        },  
       });
     },
+  },
+  mounted() {
+    this.nickname = this.$route.params.nickname;
   },
 };
 </script>
