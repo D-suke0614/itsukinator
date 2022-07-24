@@ -11,10 +11,10 @@
           </v-btn>
         </div>
         <div class="header-right">
-          <a class="header-right-button">
+          <a class="header-right-button" @click="toTerms">
             <span class="white--text">利用規約</span>
           </a>
-          <a class="header-right-button">
+          <a class="header-right-button" @click="toPrivacy">
             <span class="white--text">プライバシーポリシー</span>
           </a>
         </div>
