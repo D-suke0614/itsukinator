@@ -45,7 +45,7 @@ export default {
       this.$router.push({
         name: "result",
         params: { selectedContent: this.selectedContent },
-      });
+      })
     },
   },
   mounted() {
@@ -53,16 +53,16 @@ export default {
     switch (selected) {
       case "0":
         this.items = radioContents[0].contents;
-        break;
+        break
       case "1":
         this.items = radioContents[1].contents;
-        break;
+        break
       case "2":
         this.items = radioContents[2].contents;
-        break;
+        break
       case "3":
         this.items = radioContents[3].contents;
-        break;
+        break
     }
   },
 };

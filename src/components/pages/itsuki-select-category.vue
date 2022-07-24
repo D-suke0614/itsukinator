@@ -50,17 +50,17 @@ export default {
   data() {
     return {
       selected: null,
-    };
+    }
   },
   methods: {
     submit() {
       this.$router.push({
         name: "select-content",
         params: { selected: this.selected },
-      });
+      })
     },
   },
-};
+}
 </script>
 
 <style>
