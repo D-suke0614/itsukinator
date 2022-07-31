@@ -18,7 +18,7 @@
         </span>
       </v-btn>
     </div>
-    <img class="main-img" src="../../assets/itsuki-home.png"></img>
+    <img class="main-img" src="../../assets/itsuki-home.png">
   </div>
 </template>
 
