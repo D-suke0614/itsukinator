@@ -57,10 +57,10 @@ export default {
     submit() {
       this.$router.push({
         name: "select-content",
-        params: { 
+        params: {
         selected: this.selected,
-        nickname: this.nickname, 
-        },  
+        nickname: this.nickname,
+        },
       });
     },
   },
@@ -73,7 +73,7 @@ export default {
 <style>
 .select-page {
   background-color: #ebe568;
-  min-height: 86vh;
+  min-height: 88vh;
 }
 .label {
   text-align: center;

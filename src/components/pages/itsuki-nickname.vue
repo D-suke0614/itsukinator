@@ -66,7 +66,7 @@ export default {
 <style>
   .nickname-page {
     background-color: #6BE489;
-    min-height: 86vh;
+    min-height: 88vh;
   }
   .label {
     text-align: center;
@@ -90,7 +90,7 @@ export default {
   }
   .btn {
     height: 50px;
-    font-family: "Sawarabi Mincho"; 
+    font-family: "Sawarabi Mincho";
   }
   .input-container {
     width: 50%;

@@ -27,7 +27,7 @@ export default {
 <style>
 .fullview {
   width: 100%;
-  height: 86vh;
+  height: 88vh;
   background: #6BE489;
 }
 .loading-spacer {

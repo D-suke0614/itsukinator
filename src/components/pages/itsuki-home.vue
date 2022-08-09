@@ -40,7 +40,7 @@ export default {
 <style>
 .home-page {
   background-color: #ebe568;
-  min-height: 86vh;
+  min-height: 88vh;
   display: flex;
   flex-direction: column;
   justify-content: center;

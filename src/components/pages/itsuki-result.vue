@@ -55,7 +55,7 @@ export default {
 <style>
 .result-page {
   background-color: #6be489;
-  min-height: 86vh;
+  min-height: 88vh;
 }
 .label {
   text-align: center;
@@ -122,7 +122,7 @@ export default {
  position: absolute;
  content: '';
  top: 0px;
- width: 10px; 
+ width: 10px;
  right: 20px;
  border: solid 5px #ebe568; /*背景色と同じ色にする*/
  z-index: 2;
