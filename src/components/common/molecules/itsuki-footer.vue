@@ -4,7 +4,9 @@
       class="text-center"
       cols="12"
     >
-      @ {{ new Date().getFullYear() }} - seed-k
+      <!-- コピーライトの日付は固定で良いため、関数はコメントアウトしておく -->
+      <!-- @ {{ new Date().getFullYear() }} - 株式会社 seed-k -->
+      @ 2022 - 株式会社 seed-k
     </v-col>
   </v-footer>
 </template>
@@ -24,6 +26,6 @@ export default {
 <style>
   .text-center {
     color: #fff;
-    font-family: "Sawarabi Mincho"; 
+    font-family: "Sawarabi Mincho";
   }
 </style>
